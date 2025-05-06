@@ -42,9 +42,7 @@ Check this file and follow the instructions in the comments: [envs/shared/cicd-i
 
 ## Authors
 
-The Particle41 DevOps team.
-
-Copied from the original copyleft: <https://github.com/andreswebs/tf-app-multi-env>
+**Andre Silva** - [@andreswebs](https://github.com/andreswebs)
 
 ## License
 

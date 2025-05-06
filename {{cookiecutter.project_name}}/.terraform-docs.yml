@@ -2,6 +2,7 @@
 formatter: markdown
 
 content: |-
+  {%- raw %}
   {{ .Header }}
 
   {{ .Footer }}
@@ -17,15 +18,19 @@ content: |-
   {{ .Requirements }}
 
   {{ .Resources }}
+  {%- endraw %}
 
 output:
   file: README.md
   mode: inject
   template: |-
+    {%- raw %}
     [//]: # (BEGIN_TF_DOCS)
+
     {{ .Content }}
 
     [//]: # (END_TF_DOCS)
+    {%- endraw %}
 
 recursive:
   enabled: false
